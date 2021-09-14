@@ -9,8 +9,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.PastOrPresent;
-import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.Length;
 
 import lombok.Data;
 
@@ -24,8 +26,9 @@ public class Book {
 	@Column(name="id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@Size(min=10)
+	@Length(min=10)
 	@Column(name="title")
+	@NotBlank
 	private String title;
 	@PastOrPresent
 	@Column(name="release_date")
@@ -33,4 +36,6 @@ public class Book {
 	@Min(100)
 	@Column(name="number_pages")
 	private int numberPages;
+	@Column(name="author_id")
+	private int authorId;
 }

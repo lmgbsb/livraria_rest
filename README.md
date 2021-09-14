@@ -8,7 +8,9 @@ O objetivo deste repositório é o desenvolvimento incremental do projeto final 
 
 No segundo módulo, o projeto deve disponibilizar API's Rest utilizando o Spring Boot e as bibliotecas Lombok, ModelMapper e Bean Validation para cadastro e listagem de autores e cadastro e listagem de livros.
 
-Um livro deve possuir as seguintes informações: título, data de lançamento, número de páginas e autor.
+Um livro deve possuir as seguintes informações: título, data de lançamento, número de páginas e id do autor.
+
+Um autor deve possuir as seguintes informações: nome, e-mail, data de nascimento e mini currículo. 
 
 Ao cadastrar um novo livro, as seguintes regras deverão ser validadas:
 

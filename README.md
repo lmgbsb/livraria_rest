@@ -2,7 +2,7 @@
 Aplicação Web em Java para gestão de uma livraria online utilizando o Spring Boot para criar uma API REST
 
 
-O objetivo deste repositório é o desenvolvimento incremental do projeto final do bootcamp de Java da [Alura](https://www.alura.com.br/bootcamp/back-end-java/matriculas-abertas)
+O objetivo deste repositório é o desenvolvimento incremental do projeto final do [bootcamp de Java da Alura](https://www.alura.com.br/bootcamp/back-end-java/matriculas-abertas)
 
 ### Módulo 2 - 13/09/2021
 

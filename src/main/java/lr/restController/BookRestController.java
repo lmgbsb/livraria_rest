@@ -11,7 +11,7 @@ import lr.model.Book;
 import lr.service.BookService;
 
 @RestController
-@RequestMapping("/book")
+@RequestMapping("/api/book")
 public class BookRestController {
 	
 	
@@ -25,5 +25,4 @@ public class BookRestController {
 	public void createBook(@RequestBody @Valid Book book) {
 		bookService.createBook(book);
 	}
-
 }

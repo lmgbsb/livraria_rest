@@ -1,5 +1,7 @@
 package lr.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import lr.dto.AuthorDTO;
@@ -22,5 +24,8 @@ public class AuthorService {
 	public void saveAuthor(AuthorDTO authorDTO) {
 		Author author = mapper.toModel(authorDTO);
 		authorRepository.save(author);
+	}
+	public List<Author> list() {
+		return authorRepository.findAll();
 	}
 }

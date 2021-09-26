@@ -1,6 +1,8 @@
 package lr.service;
 
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import lr.model.Book;
@@ -18,5 +20,8 @@ public class BookService {
 	}
 	public void createBook(Book book) {
 		bookRepository.save(book);
+	}
+	public List list() {
+		List books = bookRepository.findAll();
 	}
 }

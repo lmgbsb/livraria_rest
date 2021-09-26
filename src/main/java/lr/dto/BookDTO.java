@@ -10,4 +10,5 @@ public class BookDTO {
 	private String title;
 	private String releaseDate;
 	private String numberPages;
+	private AuthorDTO authorDTO;
 }

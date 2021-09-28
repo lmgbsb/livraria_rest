@@ -23,5 +23,6 @@ public class BookService {
 	}
 	public List list() {
 		List books = bookRepository.findAll();
+		return books;
 	}
 }

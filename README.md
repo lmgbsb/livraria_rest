@@ -17,3 +17,20 @@ Ao cadastrar um novo livro, as seguintes regras deverão ser validadas:
 - Título deve ser obrigatório e ter no mínimo 10 caracteres;
 - Data de lançamento deve ser uma data menor ou igual a data atual;
 - O número de páginas deve ser maior ou igual a 100.
+
+### Módulo 3 - 27/09/2021
+
+No módulo 3, além de implementar a camada de persistência com o Spring Data JPA, também deverá ser desenvolvido um relatório de quantidade de livros publicados por autor.
+
+Essa funcionalidade deverá retornar um JSON com os dados do relatório para que a aplicação frontend consiga fazer a geração de um gráfico no seguinte formato:
+
+[{
+    “autor” : "André da Silva”,
+    “quantidadeLivros” : 2,
+    “percentual” : 28.57
+},
+{
+    “autor” : "Juliana Carvalho”,
+    “quantidadeLivros” : 1,
+    “percentual” : 14.29
+}]

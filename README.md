@@ -34,3 +34,7 @@ Essa funcionalidade deverá retornar um JSON com os dados do relatório para que
     “quantidadeLivros” : 1,
     “percentual” : 14.29
 }]
+
+O banco de dados foi modelado da seguinte forma:
+
+![](./src/main/resources/static/img/210930-bookstore_erd.png)

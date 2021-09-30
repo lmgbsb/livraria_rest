@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
@@ -23,7 +25,7 @@ public class Book {
 
 	
 	@Id
-	@Column(name="id")
+	@Column(name="book_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	@Length(min=10)
@@ -36,6 +38,7 @@ public class Book {
 	@Min(100)
 	@Column(name="number_pages")
 	private int numberPages;
-	@Column(name="author_id")
-	private int authorId;
+	@ManyToOne
+    @JoinColumn(name="author_id", nullable=false)
+	private Author author;
 }

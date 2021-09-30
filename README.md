@@ -24,6 +24,7 @@ No módulo 3, além de implementar a camada de persistência com o Spring Data J
 
 Essa funcionalidade deverá retornar um JSON com os dados do relatório para que a aplicação frontend consiga fazer a geração de um gráfico no seguinte formato:
 
+```
 [{
     “autor” : "André da Silva”,
     “quantidadeLivros” : 2,
@@ -34,6 +35,8 @@ Essa funcionalidade deverá retornar um JSON com os dados do relatório para que
     “quantidadeLivros” : 1,
     “percentual” : 14.29
 }]
+
+```
 
 O banco de dados foi modelado da seguinte forma:
 

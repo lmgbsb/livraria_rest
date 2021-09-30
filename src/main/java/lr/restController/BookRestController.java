@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import lr.dto.BookDTO;
 import lr.model.Book;
 import lr.service.BookService;
 
@@ -25,11 +26,11 @@ public class BookRestController {
 		this.bookService = bookService;
 	}
 	@PostMapping
-	public void createBook(@RequestBody @Valid Book book) {
-		bookService.createBook(book);
+	public void create(@RequestBody @Valid BookDTO bookDTO) {
+		bookService.createBook(bookDTO);
 	}
 	@GetMapping
-	public List list() {
+	public List<Book> list() {
 		return bookService.list();
 	}
 }

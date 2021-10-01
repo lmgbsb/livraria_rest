@@ -1,11 +1,11 @@
 package lr.service;
 
-
 import java.util.List;
 
 import javax.validation.Valid;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import lr.dto.BookDTO;
 import lr.mapper.BookMapper;
@@ -24,7 +24,8 @@ public class BookService {
 		this.bookRepository = bookRepository;
 		this.mapper = BookMapper.INSTANCE;
 	}
-	public void createBook(@Valid BookDTO bookDTO) {
+	@Transactional
+	public void create(@Valid BookDTO bookDTO) {
 		Book book = mapper.toModel(bookDTO);
 		bookRepository.save(book);
 	}

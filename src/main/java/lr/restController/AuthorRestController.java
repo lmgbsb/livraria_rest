@@ -27,7 +27,7 @@ public class AuthorRestController {
 	}
 	@PostMapping
 	public void create(@RequestBody @Valid AuthorDTO authorDTO) {
-		authorService.saveAuthor(authorDTO);
+		authorService.create(authorDTO);
 	}@GetMapping
 	public List<Author> list() {
 		return authorService.list();

@@ -27,7 +27,7 @@ public class BookRestController {
 	}
 	@PostMapping
 	public void create(@RequestBody @Valid BookDTO bookDTO) {
-		bookService.createBook(bookDTO);
+		bookService.create(bookDTO);
 	}
 	@GetMapping
 	public List<Book> list() {

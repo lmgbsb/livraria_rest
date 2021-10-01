@@ -6,9 +6,9 @@ import lombok.Data;
 public class BookDTO {
 
 
-	private String id;
+	private Long id;
 	private String title;
 	private String releaseDate;
-	private String numberPages;
-	private int authorId;
+	private Long numberPages;
+	private Long authorId;
 }
